@@ -1,0 +1,12 @@
+# deb cdrom:[Kali GNU/Linux 2024.3rc2 _Kali-last-snapshot_ - Official amd64 NETINST with firmware 20240818-18:18]/ kali-rolling main non-free-firmware
+
+deb http://mirror.leitecastro.com/kali kali-rolling main contrib non-free non-free-firmware
+deb-src http://mirror.leitecastro.com/kali kali-rolling main contrib non-free non-free-firmware
+
+# This system was installed using small removable media
+# (e.g. netinst, live or single CD). The matching "deb cdrom"
+# entries were disabled at the end of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
+# Kali linux repositories | Added by Katoolin
+deb https://kali.mirror.garr.it/mirrors/kali kali-rolling main non-free contrib
