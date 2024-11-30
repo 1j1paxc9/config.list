@@ -10,3 +10,364 @@ deb-src http://mirror.leitecastro.com/kali kali-rolling main contrib non-free no
 # see the sources.list(5) manual.
 # Kali linux repositories | Added by Katoolin
 deb https://kali.mirror.garr.it/mirrors/kali kali-rolling main non-free contrib
+# Craigevil's Giant Sources.list last updated  August 19, 2024
+
+# Official Debian Repos
+
+# Old Stable Bullseye https://wiki.debian.org/DebianOldStable
+# Debian Base repository
+# deb https://deb.debian.org/debian/ bullseye non-free contrib main 
+# deb-src https://deb.debian.org/debian/ bullseye main contrib non-free 
+
+# Bullseye Security updates
+# deb https://security.debian.org/ bullseye/updates non-free contrib main 
+# deb-src https://security.debian.org/ bullseye/updates main contrib non-free  
+
+# Old Stable updates Bullseye
+# deb https://deb.debian.org/debian/ bullseye-updates main contrib non-free 
+# deb-src https://deb.debian.org/debian/ bullseye-updates main contrib non-free 
+
+# Old Stable backports Bullseye  https://backports.debian.org/
+# deb https://deb.debian.org/debian/ bullseye-backports main contrib non-free 
+# deb-src https://deb.debian.org/debian/ bullseye-backports main contrib non-free 
+
+# Bullseye-Backports-Sloppy https://backports.debian.org/Instructions/#index4h2
+# deb http://deb.debian.org/debian bullseye-backports-sloppy main
+
+# Proposed Updates Bullseye https://wiki.debian.org/StableProposedUpdates
+# Stable-proposed-updates is an apt repository that contains the files that are being prepared for the next Debian/Stable point release.
+# deb https://deb.debian.org/debian/ bullseye-proposed-updates main contrib non-free 
+# deb-src https://deb.debian.org/debian/ bullseye-proposed-updates main contrib non-free
+
+############# End Old Stable ####################################################
+
+# Current Debian Stable Bookworm Repositories
+
+# Debian 12 Bookworm https://www.debian.org/releases/bookworm/
+# deb https://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
+# deb-src https://deb.debian.org/debian/ bookworm main contrib non-free
+
+# Bookworm Security https://www.debian.org/releases/bookworm/
+# deb https://deb.debian.org/debian-security bookworm-security main contrib non-free
+# deb-src https://deb.debian.org/debian-security bookworm-security main contrib non-free
+
+# Bookworm Updates https://wiki.debian.org/DebianBookworm#FAQ
+# https://wiki.debian.org/StableUpdates All packages from stable-updates will be included in point releases.
+# deb https://deb.debian.org/debian bookworm-updates main contrib non-free
+# deb-src https://deb.debian.org/debian bookworm-updates main contrib non-free
+
+# Bookworm Proposed Updates https://wiki.debian.org/StableProposedUpdates
+# Stable-proposed-updates is an apt repository that contains the files that are being prepared for the next Debian/Stable point release.
+# deb https://deb.debian.org/debian/ bookworm-proposed-updates main contrib non-free 
+# deb-src https://deb.debian.org/debian/ bookworm-proposed-updates main contrib non-free
+
+# Bookworm Backports  https://backports.debian.org/
+# Backports are _not_ enabled by default.
+# Enable them by uncommenting the following line:
+# deb https://deb.debian.org/debian/ bookworm-backports main contrib non-free
+# deb-src https://deb.debian.org/debian/ bookworm-backports main contrib non-free
+
+# Debian Fast Track https://fasttrack.debian.net/
+# https://wiki.debian.org/FastTrack
+# Debian Fast Track is a repository that allows making backports of packages available to users of the stable distribution, 
+# if those packages cannot be maintained in testing and backported in the usual way.
+# apt install fasttrack-archive-keyring
+# deb https://fasttrack.debian.net/debian-fasttrack/ bookworm-fasttrack main contrib
+# deb https://fasttrack.debian.net/debian-fasttrack/ bookworm-backports-staging main contrib
+
+##################### End Current Debian Stable ################################
+
+# Testing (Trixie) See: https://wiki.debian.org/DebianTesting
+# Release Notes: https://www.debian.org/releases/trixie/
+# deb https://deb.debian.org/debian testing main contrib non-free non-free-firmware
+# deb-src https://deb.debian.org/debian testing main contrib non-free
+
+# Testing Security (Trixie) See: https://www.debian.org/security/faq#testing
+# https://www.debian.org/doc/manuals/securing-debian-manual/ch10.en.html#security-support-testing
+# deb https://security.debian.org/ testing-security main contrib non-free non-free-firmware
+# deb-src https://security.debian.org/ testing-security main contrib non-free
+
+# Debian Unstable (Sid) https://wiki.debian.org/DebianUnstable
+# deb https://deb.debian.org/debian unstable main contrib non-free non-free-firmware
+# deb-src https://deb.debian.org/debian unstable main contrib non-free
+
+# Debian Unstable(Sid)-Debug  https://wiki.debian.org/HowToGetABacktrace
+# deb https://deb.debian.org/debian-debug/ unstable-debug main contrib non-free
+
+# Experimental http://wiki.debian.org/DebianExperimental
+# deb https://deb.debian.org/debian rc-buggy main contrib non-free
+# deb-src https://deb.debian.org/debian experimental main contrib non-free
+
+# Experimental-Debug https://wiki.debian.org/AutomaticDebugPackages
+# deb https://deb.debian.org/debian-debug/ experimental-debug main contrib non-free
+
+# Incoming https://incoming.debian.org/
+# deb https://incoming.debian.org/debian-buildd buildd-unstable main contrib non-free
+
+# Debian sources.list Information
+# Debian APT Configuration https://wiki.debian.org/AptConfiguration
+# Debian Archives http://archive.debian.org/debian/README
+# Debian Experimental https://wiki.debian.org/DebianExperimental
+# Debian Fast Track https://fasttrack.debian.net/
+# Debian Incoming https://incoming.debian.org/
+# Debian LTS https://wiki.debian.org/LTS/Using
+# Debian Mirrors https://www.debian.org/mirror/list
+# Debian Mozilla Team https://mozilla.debian.net/
+# Debian Neuro-Science http://neuro.debian.net/index.html
+# Debian Snapshot https://snapshot.debian.org/
+# Debian Janitor Fresh Builds (amd64 only) - https://janitor.debian.net/fresh-builds
+# Extrepo list https://salsa.debian.org/extrepo-team/extrepo-data/-/tree/master/repos/debian
+# Mentors Get your packages into Debian http://mentors.debian.net
+# Unofficial Repositories https://wiki.debian.org/DebianRepository/Unofficial
+# Package Management Tools https://wiki.debian.org/PackageManagementTools
+
+################### End Official Debian Repositories ###########################
+
+# Third Party Repos/Apps ( I am only posting the links )
+# Some are just the download links, ex. floorp.
+# Please READ this FIRST: https://wiki.debian.org/DebianRepository/UseThirdParty
+# Advice For New Users On Not Breaking Their Debian System https://wiki.debian.org/DontBreakDebian
+
+# Adoptium https://adoptium.net/installation/linux/
+# Adoptium Unofficial https://github.com/rpardini/adoptium-deb-installer
+# Anydesk http://deb.anydesk.com/howto.html
+# Apertium https://wiki.apertium.org/wiki/Install_Apertium_core_using_packaging
+# apt-fast https://github.com/ilikenwf/apt-fast#debian-and-derivates=
+# Azlux's repository https://packages.azlux.fr/
+# Beekeeper-Studio https://docs.beekeeperstudio.io/installation/#linux-installation
+# Brave Browser https://brave.com/linux/#release-channel-installation
+# Codelite https://docs.codelite.org/downloads/download/#ubuntu-debian
+# Collabora Office https://www.collaboraoffice.com/collabora-office-latest-snapshot/
+# CudaText editor https://cudatext.github.io/download.html
+# Debian Multimedia https://www.deb-multimedia.org/
+# Debian Plasma Mobile https://jbb.ghsq.de//debian-pm/
+# Dell OpenManage Ubuntu & Debian Repositories: https://linux.dell.com/repo/community/debian/
+# DNScrypt https://github.com/dnscrypt/dnscrypt-proxy/wiki/Installation-on-Debian-and-Ubuntu
+# Docker https://docs.docker.com/engine/install/debian/#set-up-the-repository
+# Docker Engine https://docs.docker.com/engine/install/debian/
+# Dungeon Crawl Stone Soup https://crawl.develz.org/download.htm#linux
+# Etcher https://github.com/balena-io/etcher
+# FAI https://fai-project.org/download/
+# Floorp Browser https://floorp.app/en/download/
+# Floorp Browser https://ubuntushell.com/install-floorp/
+# Freesh libre-kernel https://www.fsfla.org/ikiwiki/selibre/linux-libre/freesh.en.html
+# Fsearch https://software.opensuse.org//download.html?project=home%3Acboxdoerfer&package=fsearch#manualDebian
+# Geogebra https://wiki.geogebra.org/en/Reference:GeoGebra_Installation
+# GIMP Development Downloads https://www.gimp.org/downloads/devel/
+# Github Official CLI https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+# Google Chrome https://www.linuxcapable.com/how-to-install-google-chrome-on-debian-linux/
+# Google Chrome https://www.google.com/linuxrepositories/
+# i2p https://geti2p.net/en/download/debian#debian
+# i3wm https://i3wm.org/docs/repositories.html
+# Jitsi https://jitsi.org/downloads/ubuntu-debian-installations-instructions/
+# Kolibri https://kolibri.readthedocs.io/en/latest/install/ubuntu-debian.html
+# Kopia Backup https://kopia.io/docs/installation/#linux-installation-using-apt-debian-ubuntu
+# KXStudio https://kx.studio/Repositories
+# LibreWolf Browser (amd64) https://librewolf.net/installation/debian/
+# LinuxCNC http://buildbot.linuxcnc.org/
+# log2ram https://github.com/azlux/log2ram
+# Lokinet https://github.com/oxen-io/lokinet#linux-install
+# Lutris https://software.opensuse.org/download.html?project=home%3Astrycore&package=lutris
+# Lynis https://packages.cisofy.com/community/#debian-ubuntu
+# MakeDeb (DUR) https://docs.makedeb.org/home/installing/apt-repository/
+# Microsoft Edge https://www.microsoftedgeinsider.com/en-us/download?platform=linux
+# Microsoft Packages https://learn.microsoft.com/en-us/linux/packages
+# Microsoft Powershell https://learn.microsoft.com/en-us/powershell/scripting/install/install-debian?view=powershell-7.3
+# Microsoft VSCode https://code.visualstudio.com/docs/setup/linux
+# Mozilla Firefox https://forums.debian.net/viewtopic.php?t=158114
+# Mozilla Firefox https://support.mozilla.org/en-US/kb/install-firefox-linux
+# Nala https://gitlab.com/volian/nala#installation
+# NextDNS https://github.com/nextdns/nextdns/wiki/Debian-Based-Distribution
+# Nvidia Cuda https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#debian
+# OBS Studio https://obsproject.com/wiki/install-instructions#linux
+# OnlyOffice https://helpcenter.onlyoffice.com/installation/docs-community-install-ubuntu-arm64.aspx
+# OpenVPN https://community.openvpn.net/openvpn/wiki/OpenvpnSoftwareRepos
+# Opera https://deb.opera.com/manual.html
+# Pale Moon Browser https://software.opensuse.org/download.html?project=home:stevenpusser&package=palemoon
+# Plex Server https://support.plex.tv/articles/235974187-enable-repository-updating-for-supported-linux-server-distributions/
+# PowerDNS https://repo.powerdns.com/
+# Regolith Desktop https://regolith-desktop.com
+# https://protonvpn.com/support/official-linux-vpn-debian/
+# Rockpi/Radxa https://wiki.radxa.com/Template:Rockpi_apt
+# Seamonkey https://www.linuxcapable.com/how-to-install-seamonkey-internet-suite-on-debian-linux/
+# Sonobus https://www.sonobus.net/linux.html
+# Sources.list Generator https://debgen.simplylinux.ch/
+# Speed-test https://www.speedtest.net/apps/cli
+# Spotify https://www.spotify.com/us/download/linux/
+# Star Traders https://ftp.zap.org.au/pub/debian/README
+# Sublime Text Editor/Merge https://www.sublimetext.com/docs/linux_repositories.html
+# Syncthing https://apt.syncthing.net/
+# Tabby-terminal https://packagecloud.io/eugeny/tabby/install#bash-deb
+# Tor https://support.torproject.org/apt/
+# Trinity Desktop https://wiki.trinitydesktop.org/Debian_Trinity_Repository_Installation_Instructions
+# Turbowarp Desktop https://desktop.turbowarp.org/
+# TVAhead https://tvheadend.org/projects/tvheadend/wiki/AptRepositories
+# Ubuntuzilla https://sourceforge.net/p/ubuntuzilla/wiki/Main_Page/#installation
+# Ulaa Browser https://ulaa.com/
+# Ulauncher https://ulauncher.io/#Download
+# Ungoogle-chromium https://github.com/ungoogled-software/ungoogled-chromium-debian
+# Usermin https://github.com/webmin/usermin
+# VirtualBox https://www.virtualbox.org/wiki/Linux_Downloads
+# Virtualbox https://linuxiac.com/how-to-install-virtualbox-on-debian-12-bookworm/
+# Vivaldi Browser https://help.vivaldi.com/desktop/install-update/manual-setup-vivaldi-linux-repositories/
+# VScodium https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo
+# Waterfox https://www.linuxcapable.com/how-to-install-waterfox-browser-on-debian-11-bullseye/
+# Waydroid https://docs.waydro.id/usage/install-on-desktops
+# WeeChat https://weechat.org/download/debian/
+# Window Switch https://winswitch.org/downloads/debian-repository.html
+# Wine https://wiki.winehq.org/Debian
+# Xpra https://github.com/Xpra-org/xpra/wiki/Download#-for-debian-based-distributions
+
+
+# Server Packages ( I haven't a clue what any of these are for ) 
+# Ambari https://docs.cloudera.com/HDPDocuments/Ambari-latest/administering-ambari/content/amb_download_the_ambari_repository_on_debian_7.html
+# AMD ROCm https://rocm.docs.amd.com/projects/install-on-linux/en/latest/tutorial/quick-start.html
+# Ansible https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-debian
+# Azul/Zulu https://docs.azul.com/core/zulu-openjdk/install/debian
+# Bookwyrm https://www.howtoforge.com/how-to-install-bookwyrm-on-a-debian-12-server/
+# Bunsenlabs https://www.bunsenlabs.org/repositories.html
+# Caddy https://github.com/caddyserver/caddy
+# Cassandra https://networkmanager.pl/en/community/how-to-install-apache-cassandra-on-debian-11/
+# Ceph https://docs.ceph.com/en/latest/install/get-packages/
+# Clang https://www.baeldung.com/linux/install-clang-debian
+# Cloudflare https://pkg.cloudflare.com/index.html#debian-bookworm
+# Cloudsmith https://help.cloudsmith.io/docs/debian-repository
+# Debian Packages of R Software: https://cran.r-project.org/bin/linux/debian/
+# Debian ROCm Team https://apt.rocm.debian.net/
+# Django https://code.djangoproject.com/wiki/Distributions
+# Elasticsearch https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
+# FreeScout https://www.howtoforge.com/how-to-install-freescout-help-desk-on-debian-12/
+# FRR https://deb.frrouting.org/
+# Gitlab Runner: https://docs.gitlab.com/runner/install/linux-repository.html
+# GLPI IT Inventory Management https://www.howtoforge.com/how-to-install-glpi-inventory-management-on-debian-12/
+# Gluster https://docs.gluster.org/en/latest/Install-Guide/Install/
+# Grafana https://grafana.com/docs/grafana/latest/installation/debian/#install-from-apt-repository
+# HAProxy https://haproxy.debian.net/
+# Hashicorp https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository
+# Intel® oneAPI Toolkits https://www.intel.com/content/www/us/en/docs/oneapi/installation-guide-linux/2024-2/apt.html#GUID-A18C12A3-5A90-4B41-AAAE-0B6EA8F88B2E
+# Openofu - Terraform replacement https://opentofu.org/
+# Jellyfin Server https://jellyfin.org/downloads/
+# Jenkins https://pkg.jenkins.io/debian/
+# JFrog Bintray: https://bintray.com/amurzeau/debian
+# Kibana https://www.elastic.co/guide/en/kibana/current/deb.html
+# Kitware https://apt.kitware.com/
+# Kubernetes https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+# LibreNMS https://docs.librenms.org/Installation/Install-LibreNMS/
+# llvm https://apt.llvm.org/
+# Linux Terminal Server Project https://ltsp.org/docs/installation/
+# MariaDB https://downloads.mariadb.org/mariadb/repositories/#distro=Debian&mirror=jaleco
+# Microsoft https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software
+# Miniconda https://docs.conda.io/projects/conda/en/latest/user-guide/install/rpm-debian.html
+# MongoDB Community Edition https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/
+# Mono https://www.mono-project.com/download/stable/#download-lin-debian
+# MySQL https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/
+# Neo4j https://debian.neo4j.com/
+# Nginx: https://nginx.org/en/linux_packages.html
+# NodeSource Node.js Binary Distributions https://github.com/nodesource/distributions#debinstall
+# NSLS-II Controls Package Repository https://epicsdeb.bnl.gov/debian/
+# OBiBa software: https://www.obiba.org/pages/pkg/
+# Odoo (previously known as OpenERP) https://www.rosehosting.com/blog/how-to-install-odoo-on-debian-12/
+# OpenEMR https://www.open-emr.org/wiki/index.php/OpenEMR_7.0.1_Linux_Installation
+# OpenHab https://www.openhab.org/docs/installation/linux.html
+# Openmediavault https://docs.openmediavault.org/en/latest/installation/on_debian.html
+# OpenNSM https://docs.opennms.org/opennms/releases/latest/guide-install/guide-install.html
+# OpenSearch https://opensearch.org/docs/latest/install-and-configure/install-opensearch/debian/
+# OpenWebRX https://www.openwebrx.de/download/debian.php
+# Passenger + Nginx APT repository https://www.phusionpassenger.com/library/install/nginx/apt_repo/
+# Percona Server https://docs.percona.com/percona-server/8.0/apt-repo.html
+# PHP dev info https://deb.sury.org/
+# PHP https://packages.sury.org/php/README.txt
+# PostgreSQL https://www.postgresql.org/download/linux/debian/
+# Proxmox https://pbs.proxmox.com/docs/installation.html
+# Promox VE https://pve.proxmox.com/wiki/Package_Repositories
+# Prosody https://prosody.im/download/package_repository
+# QGIS https://www.qgis.org/en/site/forusers/alldownloads.html
+# Qv2ray https://github.com/Qv2ray/debian
+# RabbitMQ https://www.rabbitmq.com/install-debian.html
+# Redis https://redis.io/docs/getting-started/installation/install-redis-on-linux/
+# ROS Iron https://docs.ros.org/en/iron/Installation/Ubuntu-Install-Debians.html
+# rsyslog from home:rgerhards project: https://software.opensuse.org//download.html?project=home%3Argerhards&package=rsyslog
+# SaltStack https://repo.saltproject.io/#debian
+# SEP Seran https://wiki.sep.de/wiki/index.php/Debian_Repository
+# Terraform https://www.terraform.io/docs/cli/install/apt.html
+# UmbrelOS https://umbrel.com/umbrelos#install
+# Unofficial Python backports for Debian https://people.debian.org/~paravoid/python-all/
+# UniFi Network Server https://help.ui.com/hc/en-us/articles/220066768-Updating-and-Installing-Self-Hosted-UniFi-Network-Servers-Linux
+# Webmin https://webmin.com/download/
+# Wikimedia https://wikitech.wikimedia.org/wiki/APT_repository
+# wxWidgets https://wiki.wxpython.org/InstallingOnUbuntuOrDebian
+# zrepl https://zrepl.github.io/installation/apt-repos.html
+########################### END Server Repositories ###################################
+
+# Raspberry Pi OS
+
+# Raspberry Pi OS Legacy Buster
+# Legacy Buster arm64
+# deb https://archive.raspberrypi.org/debian/ buster main
+# Legacy Buster armhf
+# deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
+
+# Raspberry Pi OS OldStable Bullseye 
+# Rapsberry Pi arm64
+# deb https://archive.raspberrypi.org/debian/ bullseye main
+# Raspberry Pi armhf
+# deb http://raspbian.raspberrypi.org/raspbian/ bullseye main contrib non-free rpi
+
+# Raspberry Pi OS Bookworm
+# https://www.raspberrypi.com/news/bookworm-the-new-version-of-raspberry-pi-os/
+# Rapsberry Pi arm64
+# deb https://archive.raspberrypi.com/debian/ bookworm main
+# Raspberry Pi armhf
+# deb http://raspbian.raspberrypi.com/raspbian/ bookworm main contrib non-free rpi
+
+# Older RPIOS packages
+# http://snapshot-mm.raspbian.org/
+# http://snapshot.raspbian.org/
+
+########## End RPIOS ##################################
+
+# Other Debian based Distros
+
+# Armbian   https://www.armbian.com/kernel/
+
+# Devuan https://files.devuan.org/README.txt
+# https://files.devuan.org/MIRRORS.txt
+# Devuan arm images https://arm-files.devuan.org/
+
+# Kali See: How to add Kali Linux repositories to another Linux distribution https://miloserdov.org/?p=3609
+# https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
+
+# KickSecure https://www.kicksecure.com/wiki/Debian
+
+# MX Linux http://mxrepo.com/
+
+# Liquorix Kernel by damentz https://liquorix.net/
+# curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash
+# deb http://liquorix.net/debian/ sid main
+
+# Progress Linux - a Debian derivative focused on system integration
+# https://progress-linux.org/installation/
+
+# Tails
+# https://tails.boum.org/contribute/APT_repository/
+
+############################## END ##################################### 
+
+# Debian Main Repositories
+deb http://deb.debian.org/debian/ bookworm main contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm main contrib non-free
+
+# Debian Security Updates
+deb http://security.debian.org/debian-security bookworm-security main contrib non-free
+deb-src http://security.debian.org/debian-security bookworm-security main contrib non-free
+
+# Debian Updates
+deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free
+
+#/etc/apt/sources.list
+# deb http://de.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+deb-src http://http.kali.org/kali kali-rolling main contrib non-free
+#deb http://kali.cs.nctu.edu.tw/kali kali-rolling main non-free contrib
+                                
